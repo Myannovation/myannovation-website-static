@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Myannovation: Empowering farmers with smart technology solutions. IoT irrigation, sensors, and sustainable farming tools.">
+    <meta name="keywords"
+        content="smart farming, iot agriculture, myanmar agriculture, solar pump, irrigation system, myannovation">
+    <meta name="robots" content="index, follow">
+    <title>Myannovation - Empowering Nature with Innovation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar glass-nav">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="Myannovation Logo" style="height: 40px;">
+                <span class="logo-text">Myannovation</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link" style="color: var(--primary);">Home</a>
+                <a href="activities.html" class="nav-link">Activities</a>
+                <a href="team.html" class="nav-link">Our Team</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="register.html" class="btn btn-primary">Sign Up</a>
+            </div>
+            <div class="mobile-toggle" style="display: none; color: var(--primary-dark); font-size: 1.5rem;">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title reveal">Empowering Nature with <span class="gradient-text">Innovation</span>
+                    </h1>
+                    <p class="hero-subtitle reveal">The Innovation Hub Where Tech Serves the Ground. We design tools
+                        that
+                        empower farmers with simple, sustainable field solutions.</p>
+                    <div class="cta-group reveal">
+                        <a href="#products" class="btn btn-primary">Explore Solutions</a>
+                        <a href="activities.html" class="btn btn-outline" style="margin-left: 1rem;">View Activities</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper reveal">
+                    <img src="assets/hero-bg.jpg" alt="Smart Farming" class="hero-img-main">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Presentation -->
+    <section class="section video-section">
+        <div class="container">
+            <h2 class="reveal" style="font-size: 2.5rem; margin-bottom: 1rem; text-align: center;">See Innovation in
+                <span class="gradient-text">Action</span>
+            </h2>
+            <p class="reveal"
+                style="color: var(--text-secondary); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Witness how our technology is transforming agriculture across Myanmar, one field at a time.
+            </p>
+            <div class="video-container reveal">
+                <video class="video-player" controls autoplay muted loop playsinline>
+                    <source src="videos/IMG_9716.MP4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile App Section -->
+    <section class="section" style="background: var(--bg-off-white);">
+        <div class="container">
+            <div class="app-section">
+                <div class="app-visuals reveal">
+                    <div class="phone-frame">
+                        <img src="assets/app_screen_dashboard_1768584117093.png" alt="App Dashboard"
+                            class="phone-screen" onclick="openImageModal(this.src)">
+                    </div>
+                    <div class="phone-frame">
+                        <img src="assets/app_screen_stats_1768584152822.png" alt="App Stats" class="phone-screen"
+                            onclick="openImageModal(this.src)">
+                    </div>
+                    <div class="phone-frame">
+                        <img src="assets/app_screen_controls_1768584133861.png" alt="App Controls" class="phone-screen"
+                            onclick="openImageModal(this.src)">
+                    </div>
+                </div>
+                <div class="app-content reveal">
+                    <h2>Smart Farming <span style="color: var(--primary);">in Your Pocket</span></h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.1rem; line-height: 1.6;">
+                        Monitor your fields, control irrigation pumps, and analyze crop health data directly from your
+                        smartphone.
+                        The Myannovation App puts control back in your hands with an intuitive interface designed for
+                        modern farmers.
+                        Stay connected to your farm from anywhere, ensuring optimal growth and resource management.
+                    </p>
+                    <ul class="feature-list">
+                        <li class="feature-item"><i class="fas fa-check"></i> Real-time Sensor Data Monitoring</li>
+                        <li class="feature-item"><i class="fas fa-check"></i> Remote Pump Control & Scheduling</li>
+                        <li class="feature-item"><i class="fas fa-check"></i> Instant Weather Alerts & Analytics</li>
+                        <li class="feature-item"><i class="fas fa-check"></i> Crop Health History Tracking</li>
+                    </ul>
+                    <a href="#" class="btn btn-download">
+                        <i class="fab fa-google-play"></i> Download App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section" id="products">
+        <div class="container">
+            <h2 class="reveal" style="font-size: 2.5rem; margin-bottom: 3rem; text-align: center;">All Time <span
+                    class="gradient-text">Bests</span></h2>
+
+            <div class="grid-3">
+                <!-- Product 1 -->
+                <div class="card reveal">
+                    <div class="card-image-container">
+                        <img src="assets/iot-station.png" alt="IoT Irrigation Station" class="card-img"
+                            onclick="openImageModal(this.src)">
+                    </div>
+                    <h3 class="card-title">IoT Irrigation Stations</h3>
+                    <ul class="card-text" style="list-style: none;">
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
+                                style="color: var(--primary); margin-right: 0.5rem;"></i>Automated distribution</li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
+                                style="color: var(--primary); margin-right: 0.5rem;"></i>Solar-powered panels</li>
+                        <li><i class="fas fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>Real-time
+                            monitoring</li>
+                    </ul>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="card reveal">
+                    <div class="card-image-container">
+                        <img src="assets/canal-gate.png" alt="Gated Canal Sluice" class="card-img"
+                            onclick="openImageModal(this.src)">
+                    </div>
+                    <h3 class="card-title">Gated Canals</h3>
+                    <ul class="card-text" style="list-style: none;">
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
+                                style="color: var(--primary); margin-right: 0.5rem;"></i>Regulated flow gates</li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
+                                style="color: var(--primary); margin-right: 0.5rem;"></i>Manual or smart control</li>
+                        <li><i class="fas fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>Built for
+                            field deployment</li>
+                    </ul>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="card reveal">
+                    <div class="card-image-container">
+                        <img src="assets/water-sensor.png" alt="Water Level Sensor" class="card-img"
+                            onclick="openImageModal(this.src)">
+                    </div>
+                    <h3 class="card-title">Water Level Sensors</h3>
+                    <ul class="card-text" style="list-style: none;">
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
+                                style="color: var(--primary); margin-right: 0.5rem;"></i>Rain-proof station</li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
+                                style="color: var(--primary); margin-right: 0.5rem;"></i>Accurate reading</li>
+                        <li><i class="fas fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>Wireless
+                            telemetry</li>
+                    </ul>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="card reveal">
+                    <div class="card-image-container">
+                        <img src="assets/solar-pump.png" alt="Solar Pump" class="card-img"
+                            onclick="openImageModal(this.src)">
+                    </div>
+                    <h3 class="card-title">Solar Pump</h3>
+                    <ul class="card-text" style="list-style: none;">
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
+                                style="color: var(--primary); margin-right: 0.5rem;"></i>Efficient electric pump</li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
+                                style="color: var(--primary); margin-right: 0.5rem;"></i>Solar driver integration</li>
+                        <li><i class="fas fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>Rugged farm
+                            design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Slider -->
+    <section class="section">
+        <div class="container">
+            <h2 class="reveal" style="font-size: 2.5rem; margin-bottom: 3rem; text-align: center;">Farmers <span
+                    class="gradient-text">Love Us</span></h2>
+
+            <div class="testimonial-container reveal">
+                <div class="testimonial-track marquee-content">
+                    <!-- Original Slides -->
+                    <div class="testimonial-slide">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="testimonial-text">"Innovation distinguishes between a leader and a follower.
+                            Myannovation is leading the way in smart agriculture for our region."</p>
+                        <div class="user-info">
+                            <h4 style="color: var(--primary);">U Kyaw Soe</h4>
+                            <span style="color: var(--text-secondary);">Rice Farmer, Ayeyarwady</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="testimonial-text">"The water sensors saved me countless hours of checking the fields
+                            manually. Now I can monitor everything from my phone."</p>
+                        <div class="user-info">
+                            <h4 style="color: var(--primary);">Daw Ni Ni</h4>
+                            <span style="color: var(--text-secondary);">Vegetable Grower, Shan State</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="testimonial-text">"Reliable, durable, and easy to use. The solar pump system
+                            drastically reduced my fuel costs."</p>
+                        <div class="user-info">
+                            <h4 style="color: var(--primary);">U Hla Maung</h4>
+                            <span style="color: var(--text-secondary);">Bago Region</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="testimonial-text">"Excellent support from the team. They really care about helping
+                            farmers succeed with technology."</p>
+                        <div class="user-info">
+                            <h4 style="color: var(--primary);">Ko Zaw</h4>
+                            <span style="color: var(--text-secondary);">Mandalay</span>
+                        </div>
+                    </div>
+
+                    <!-- Duplicated Slides for Marquee -->
+                    <div class="testimonial-slide">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="testimonial-text">"Innovation distinguishes between a leader and a follower.
+                            Myannovation is leading the way in smart agriculture for our region."</p>
+                        <div class="user-info">
+                            <h4 style="color: var(--primary);">U Kyaw Soe</h4>
+                            <span style="color: var(--text-secondary);">Rice Farmer, Ayeyarwady</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="testimonial-text">"The water sensors saved me countless hours of checking the fields
+                            manually. Now I can monitor everything from my phone."</p>
+                        <div class="user-info">
+                            <h4 style="color: var(--primary);">Daw Ni Ni</h4>
+                            <span style="color: var(--text-secondary);">Vegetable Grower, Shan State</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="testimonial-text">"Reliable, durable, and easy to use. The solar pump system
+                            drastically reduced my fuel costs."</p>
+                        <div class="user-info">
+                            <h4 style="color: var(--primary);">U Hla Maung</h4>
+                            <span style="color: var(--text-secondary);">Bago Region</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="testimonial-text">"Excellent support from the team. They really care about helping
+                            farmers succeed with technology."</p>
+                        <div class="user-info">
+                            <h4 style="color: var(--primary);">Ko Zaw</h4>
+                            <span style="color: var(--text-secondary);">Mandalay</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="reveal" style="font-size: 2.5rem; margin-bottom: 3rem; text-align: center;">Get in <span
+                    class="gradient-text">Touch</span></h2>
+            <div class="contact-grid">
+                <div class="contact-info-card reveal">
+                    <h3 style="margin-bottom: 1.5rem;">Contact Info</h3>
+                    <ul style="list-style: none;">
+                        <li
+                            style="color: var(--text-secondary); margin-bottom: 1rem; display: flex; align-items: center;">
+                            <i class="fas fa-envelope"
+                                style="color: var(--primary); margin-right: 1rem; width: 20px;"></i>
+                            info@myannovation.com
+                        </li>
+                        <li
+                            style="color: var(--text-secondary); margin-bottom: 1rem; display: flex; align-items: center;">
+                            <i class="fas fa-phone" style="color: var(--primary); margin-right: 1rem; width: 20px;"></i>
+                            +959 421148249
+                        </li>
+                        <li
+                            style="color: var(--text-secondary); margin-bottom: 1rem; display: flex; align-items: center;">
+                            <i class="fas fa-map-marker-alt"
+                                style="color: var(--primary); margin-right: 1rem; width: 20px;"></i>
+                            (555/A) Anawyahtar Road Hlaingtharyar
+                        </li>
+                    </ul>
+                </div>
+
+                <form class="contact-form reveal" action="https://formspree.io/f/xzddddpr" method="POST">
+                    <h3 style="margin-bottom: 1.5rem;">Send Message</h3>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-input" required></textarea>
+                    </div>
+                    <!-- Hidden redirect for formspree -->
+                    <input type="hidden" name="_next" value="https://formspree.io/thanks?language=en">
+                    <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send
+                        Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid-3">
+                <!-- Column 1: Info -->
+                <div>
+                    <h3>Myannovation</h3>
+                    <p>
+                        Empowering farmers with smart technology solutions.
+                        Building a sustainable future for Myanmar's agriculture.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Newsletter -->
+                <div>
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for updates.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Email" class="newsletter-input" required>
+                        <button type="submit" class="btn-newsletter">Go</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Myannovation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal" onclick="closeImageModal()">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage" onclick="event.stopPropagation()">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

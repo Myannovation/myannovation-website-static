@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Myannovation Mobile App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .privacy-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .policy-card {
+            background: var(--bg-card);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+            border: 1px solid var(--border);
+        }
+
+        .policy-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1rem;
+        }
+
+        .policy-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(46, 125, 50, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-right: 1.5rem;
+        }
+
+        .policy-title {
+            font-size: 1.5rem;
+            color: var(--primary-dark);
+            margin: 0;
+        }
+
+        .policy-content {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .policy-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .policy-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .policy-list li::before {
+            content: '•';
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 600px) {
+            .policy-card {
+                padding: 2rem;
+            }
+
+            .policy-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .policy-icon {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar glass-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Myannovation Logo" style="height: 40px;">
+                <span class="logo-text">Myannovation</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="activities.html" class="nav-link">Activities</a>
+                <a href="team.html" class="nav-link">Our Team</a>
+                <a href="index.html#products" class="nav-link">Products</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="register.html" class="btn btn-primary">Sign Up</a>
+            </div>
+            <div class="mobile-toggle" style="display: none; color: var(--primary-dark); font-size: 1.5rem;">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="section"
+        style="padding-top: 150px; padding-bottom: 60px; text-align: center; background: linear-gradient(to bottom, var(--bg-off-white), var(--bg-light));">
+        <div class="container">
+            <h1 class="hero-title reveal" style="font-size: 3rem;">Privacy <span class="gradient-text">Policy</span>
+            </h1>
+            <p class="hero-subtitle reveal" style="margin: 0 auto; max-width: 600px;">
+                Transparency and trust are at the core of what we do. Learn how we handle your data for the Myannovation
+                Mobile App.
+            </p>
+            <div class="reveal"
+                style="margin-top: 2rem; display: inline-block; padding: 0.5rem 1.5rem; background: rgba(46, 125, 50, 0.1); color: var(--primary-dark); border-radius: 50px; font-weight: 500;">
+                Last Updated: January 16, 2026
+            </div>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="section">
+        <div class="container privacy-container">
+
+            <!-- Introduction -->
+            <div class="policy-card reveal">
+                <div class="policy-header">
+                    <div class="policy-icon"><i class="fas fa-user-shield"></i></div>
+                    <h2 class="policy-title">Introduction</h2>
+                </div>
+                <div class="policy-content">
+                    Myannovation ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy
+                    explains how your personal information is collected, used, and disclosed by Myannovation. This
+                    Privacy Policy applies to our website, and its associated subdomains (collectively, our "Service")
+                    alongside our application, Myannovation Mobile App.
+                </div>
+            </div>
+
+            <!-- Information Collection -->
+            <div class="policy-card reveal">
+                <div class="policy-header">
+                    <div class="policy-icon"><i class="fas fa-database"></i></div>
+                    <h2 class="policy-title">Information We Collect</h2>
+                </div>
+                <div class="policy-content">
+                    <p>We collect information to provide better services to our users. The types of information we
+                        collect include:</p>
+                    <ul class="policy-list">
+                        <li><strong>Personal Information:</strong> Name, email address, phone number, and farm location
+                            data when you register for an account.</li>
+                        <li><strong>Device Information:</strong> Information about your mobile device, including IP
+                            address, device type, and operating system.</li>
+                        <li><strong>Usage Data:</strong> Information identifying your device and usage patterns, such as
+                            features used and time spent on the app.</li>
+                        <li><strong>Sensor Data:</strong> Data collected from your connected agricultural devices (IoT
+                            sensors, pumps, etc.) linked to your account.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Usage -->
+            <div class="policy-card reveal">
+                <div class="policy-header">
+                    <div class="policy-icon"><i class="fas fa-cogs"></i></div>
+                    <h2 class="policy-title">How We Use Your Information</h2>
+                </div>
+                <div class="policy-content">
+                    <p>We use the information we collect in various ways, including to:</p>
+                    <ul class="policy-list">
+                        <li>Provide, operate, and maintain our mobile application</li>
+                        <li>Improve, personalize, and expand our services</li>
+                        <li>Understand and analyze how you use our app</li>
+                        <li>Develop new products, services, features, and functionality</li>
+                        <li>Communicate with you, either directly or through one of our partners</li>
+                        <li>Monitor and analyze trends, usage, and activities in connection with our service</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sharing -->
+            <div class="policy-card reveal">
+                <div class="policy-header">
+                    <div class="policy-icon"><i class="fas fa-share-alt"></i></div>
+                    <h2 class="policy-title">Information Sharing</h2>
+                </div>
+                <div class="policy-content">
+                    We do not sell, trade, or rent Users personal identification information to others. We may share
+                    generic aggregated demographic information not linked to any personal identification information
+                    regarding visitors and users with our business partners, trusted affiliates, and advertisers for the
+                    purposes outlined above.
+                </div>
+            </div>
+
+            <!-- Security -->
+            <div class="policy-card reveal">
+                <div class="policy-header">
+                    <div class="policy-icon"><i class="fas fa-lock"></i></div>
+                    <h2 class="policy-title">Security</h2>
+                </div>
+                <div class="policy-content">
+                    We value your trust in providing us your Personal Information, thus we are striving to use
+                    commercially acceptable means of protecting it. But remember that no method of transmission over the
+                    internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its
+                    absolute security.
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="policy-card reveal">
+                <div class="policy-header">
+                    <div class="policy-icon"><i class="fas fa-envelope-open-text"></i></div>
+                    <h2 class="policy-title">Contact Us</h2>
+                </div>
+                <div class="policy-content">
+                    <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.
+                    </p>
+                    <div
+                        style="margin-top: 1.5rem; padding: 1.5rem; background: #f9f9f9; border-radius: 12px; display: flex; flex-direction: column; gap: 0.8rem;">
+                        <span style="display: flex; align-items: center;"><i class="fas fa-envelope"
+                                style="color: var(--primary); margin-right: 1rem; width: 20px;"></i>
+                            info@myannovation.com</span>
+                        <span style="display: flex; align-items: center;"><i class="fas fa-phone"
+                                style="color: var(--primary); margin-right: 1rem; width: 20px;"></i> +959
+                            421148249</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid-3">
+                <!-- Column 1: Info -->
+                <div>
+                    <h3>Myannovation</h3>
+                    <p>
+                        Empowering farmers with smart technology solutions.
+                        Building a sustainable future for Myanmar's agriculture.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Newsletter -->
+                <div>
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for updates.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Email" class="newsletter-input" required>
+                        <button type="submit" class="btn-newsletter">Go</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Myannovation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

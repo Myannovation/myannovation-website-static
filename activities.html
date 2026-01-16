@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities - Myannovation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar glass-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Myannovation Logo" style="height: 40px;">
+                <span class="logo-text">Myannovation</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="activities.html" class="nav-link" style="color: var(--primary);">Activities</a>
+                <a href="team.html" class="nav-link">Our Team</a>
+                <a href="index.html#products" class="nav-link">Products</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="register.html" class="btn btn-primary">Sign Up</a>
+            </div>
+            <div class="mobile-toggle" style="display: none; color: var(--primary-dark); font-size: 1.5rem;">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="section" style="padding-top: 150px; padding-bottom: 50px; text-align: center;">
+        <div class="container">
+            <h1 class="hero-title reveal">Our <span class="gradient-text">Activities</span></h1>
+            <p class="hero-subtitle reveal" style="margin: 0 auto;">Innovating in the field, organizing workshops, and
+                empowering communities.</p>
+        </div>
+    </section>
+
+    <!-- Activities Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="grid-3">
+                <div class="card reveal">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1000&auto=format&fit=crop"
+                            alt="Field Testing" class="card-img">
+                    </div>
+                    <h3 class="card-title">Field Testing</h3>
+                    <p class="card-text">We test our devices extensively in real-world conditions to ensure reliability
+                        and durability for farmers.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-image-container">
+                        <img src="assets/farmer_workshop_fixed_1768584099877.png" alt="Farmer Workshops"
+                            class="card-img">
+                    </div>
+                    <h3 class="card-title">Farmer Workshops</h3>
+                    <p class="card-text">Conducting training sessions to help farmers understand and maximize the
+                        benefits of smart agriculture.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1589923188900-85dae523342b?q=80&w=1000&auto=format&fit=crop"
+                            alt="Community Outreach" class="card-img">
+                    </div>
+                    <h3 class="card-title">Community Outreach</h3>
+                    <p class="card-text">Building a community of tech-savvy farmers and sharing knowledge for a
+                        sustainable future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid-3">
+                <!-- Column 1: Info -->
+                <div>
+                    <h3>Myannovation</h3>
+                    <p>
+                        Empowering farmers with smart technology solutions.
+                        Building a sustainable future for Myanmar's agriculture.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Newsletter -->
+                <div>
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for updates.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Email" class="newsletter-input" required>
+                        <button type="submit" class="btn-newsletter">Go</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Myannovation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
