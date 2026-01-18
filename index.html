@@ -21,6 +21,12 @@
     <title>Myannovation - Empowering Nature with Innovation [v16:12]</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Preload critical images for faster loading -->
+    <link rel="preload" as="image" href="assets/logo.png">
+    <link rel="preload" as="image" href="assets/hero-bg.jpg">
+    <link rel="preload" as="image" href="assets/timeline.png">
+
 </head>
 
 <body>
@@ -111,15 +117,15 @@
                 <div class="app-visuals reveal">
                     <div class="phone-frame">
                         <img src="assets/app_screen_dashboard_1768584117093.png" alt="App Dashboard"
-                            class="phone-screen" onclick="openImageModal(this.src)">
+                            class="phone-screen" loading="lazy" onclick="openImageModal(this.src)">
                     </div>
                     <div class="phone-frame">
                         <img src="assets/app_screen_stats_1768584152822.png" alt="App Stats" class="phone-screen"
-                            onclick="openImageModal(this.src)">
+                            loading="lazy" onclick="openImageModal(this.src)">
                     </div>
                     <div class="phone-frame">
                         <img src="assets/app_screen_controls_1768584133861.png" alt="App Controls" class="phone-screen"
-                            onclick="openImageModal(this.src)">
+                            loading="lazy" onclick="openImageModal(this.src)">
                     </div>
                 </div>
                 <div class="app-content reveal">
@@ -155,7 +161,7 @@
                 <!-- Product 1 -->
                 <div class="card reveal">
                     <div class="card-image-container">
-                        <img src="assets/iot-station.png" alt="IoT Irrigation Station" class="card-img"
+                        <img src="assets/iot-station.png" alt="IoT Irrigation Station" class="card-img" loading="lazy"
                             onclick="openImageModal(this.src)">
                     </div>
                     <h3 class="card-title">IoT Irrigation Stations</h3>
@@ -172,7 +178,7 @@
                 <!-- Product 2 -->
                 <div class="card reveal">
                     <div class="card-image-container">
-                        <img src="assets/canal-gate.png" alt="Gated Canal Sluice" class="card-img"
+                        <img src="assets/canal-gate.png" alt="Gated Canal Sluice" class="card-img" loading="lazy"
                             onclick="openImageModal(this.src)">
                     </div>
                     <h3 class="card-title">Gated Canals</h3>
@@ -189,7 +195,7 @@
                 <!-- Product 3 -->
                 <div class="card reveal">
                     <div class="card-image-container">
-                        <img src="assets/water-sensor.png" alt="Water Level Sensor" class="card-img"
+                        <img src="assets/water-sensor.png" alt="Water Level Sensor" class="card-img" loading="lazy"
                             onclick="openImageModal(this.src)">
                     </div>
                     <h3 class="card-title">Water Level Sensors</h3>
@@ -206,7 +212,7 @@
                 <!-- Product 4 -->
                 <div class="card reveal">
                     <div class="card-image-container">
-                        <img src="assets/solar-pump.png" alt="Solar Pump" class="card-img"
+                        <img src="assets/solar-pump.png" alt="Solar Pump" class="card-img" loading="lazy"
                             onclick="openImageModal(this.src)">
                     </div>
                     <h3 class="card-title">Solar Pump</h3>
